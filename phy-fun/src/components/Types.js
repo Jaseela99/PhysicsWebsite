@@ -8,7 +8,7 @@ const Types = () => {
     </h1>
     <div className="flex w-full justify-center opacity-100 pt-3 m-1">
       <div className="font-domin w-1/2 text-lg pt-3">
-        <h6 className='p-3 font-semibold'>According to the ability of passing light through objects are classified in to three:</h6>
+        <h6 className='p-3 font-semibold'>According to the ability of passing light through objects are classified in to :</h6>
         <p className="p-3">
         1. Objects which do not pass any light through them are called <span className='text-sky-700 font-semibold'> Opaque </span> objects.
         </p>
@@ -23,7 +23,7 @@ const Types = () => {
       <img
       src="https://cdn.dribbble.com/users/1700221/screenshots/8634944/li6.gif"
         alt="power"
-        className=" ml-3 h-full w-1/2 rounded-md shadow-md opacity-100"
+        className=" ml-3 h-full w-1/2 rounded-md shadow-md opacity-100" whileHover={{scale:1.1}}
       />
     </div>
   </div>
