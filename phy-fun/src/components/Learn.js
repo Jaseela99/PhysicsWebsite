@@ -118,7 +118,7 @@ const Learn = () => {
             <hr />
             <motion.li
               className="p-4"
-              onClick={showReflection}
+              onClick={showSummary}
               whileHover={{ scale: 1.1 }}
             >
               Summary
