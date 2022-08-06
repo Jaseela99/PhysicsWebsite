@@ -32,8 +32,8 @@ const Home = () => {
      <h5 className="text-4xl font-script p-2 font-semibold text-red-800 m-2 animate-bounce ">Fun Facts</h5>
       <motion.div  drag="x"   dragConstraints={{right:0,left:0}} className="overflow-hidden h-3/4 cursor-grab ml-25">
         <motion.div className="flex " initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.1, duration:2 }}>
-          {Facts.map((fact) => {
-            return <motion.div className=" p-5 w-full" whileHover={{scale:1.1}} whileTap={{scale:0.9}}>
+          {Facts.map((fact,index) => {
+            return <motion.div className=" p-5 w-full" whileHover={{scale:1.1}} whileTap={{scale:0.9}} key={index}>
               <img src={fact.image} alt="facts" className="h-3/4 w-full rounded-md shadow-md border-r-2"/>
               <p className="bg-white p-2 border-b-2 border-r-2 shadow-md  font-mono ">{fact.fact}</p>
             </motion.div>;

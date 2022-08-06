@@ -1,20 +1,36 @@
-import React from 'react'
+import React from "react";
 
 const Introduction = () => {
   return (
-    <div className='h-screen p-1 border-2 flex flex-col '>
-        <div className='flex w-full'>
-        <h1 className='font-lobster text-4xl p-8 m-auto w-3/4'>How do we see things???</h1>
-<img src="https://c.tenor.com/ZoVfJwzAFIAAAAAC/no-power-power-outage.gif" alt="power" className=' h-full w-1/4 rounded-md shadow-md'/>
+    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-80">
+      <h1 className="font-lobster text-5xl flex justify-center m-5 w-3/4 opacity-100 p-3">
+        How Do We See Things???
+      </h1>
+      <div className="flex w-full justify-center opacity-100 p-2">
+        <div className="font-domin w-1/2 text-lg">
+          <p className="p-2">
+            In a completely dark room, will you be able to see anything? No,
+            right?But Lighting a candle or torch can bring light to the room .
+            Yes, <span className="text-sky-700 font-semibold">LIGHT </span> 
+            helps us see objects.So Where does this light comes from?
+          </p>
+          <p className="p-2">
+            Torch can give light on its own. Now, Imagine Sun ,It gives us light
+            all day. The Objects which can emit their own light are called{" "}
+            <span className="text-sky-700 font-semibold">luminous </span>object.
+          </p>
+          <p className="p-2">
+            When luminous objects emits light it falls on the other objects and travels towards our eye. That's How we see .Interesting Right?
+          </p>
         </div>
-<div className='flex flex-col justify-center'>
-<p>
-  <span></span>
-</p>
-</div>
-
+        <img
+          src="https://c.tenor.com/ZoVfJwzAFIAAAAAC/no-power-power-outage.gif"
+          alt="power"
+          className=" ml-12 h-3/4 w-1/4    rounded-md shadow-md opacity-100"
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Introduction
+export default Introduction;

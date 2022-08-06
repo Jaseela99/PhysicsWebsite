@@ -7,7 +7,8 @@ module.exports = {
       "pacifio":['Pacifico', 'cursive'],
       "satisfy":['Satisfy', 'cursive'],
       "grat":['Great Vibes','cursive'],
-      "script":['Kaushan Script','cursive']
+      "script":['Kaushan Script','cursive'],
+      "domin":['Domine','serif']
       }
     },
     backgroundImage: {

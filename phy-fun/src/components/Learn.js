@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import {motion} from "framer-motion"
 import Introduction from "./Introduction";
 import Types from "./Types"
+import Shadows from "./Shadows";
 const Learn = () => {
 
   const [intro,setIntro] =React.useState(true)
@@ -11,23 +12,32 @@ const Learn = () => {
   const [reflection,setReflection] =React.useState(false)
   const navigate = useNavigate();
   const showIntroduction=()=>{
-    setIntro(!intro)
-    setTypes(types)
-    setShadow(shadow)
-   setReflection(reflection)
+    setIntro(true)
+    setTypes(false)
+    setShadow(false)
+   setReflection(false)
   }
   const showTypes=()=>{
-    setIntro(intro)
-    setTypes(!types)
-   setShadow(shadow)
-   setReflection(reflection)
+    setIntro(false)
+    setTypes(true)
+   setShadow(false)
+   setReflection(false)
   }
-  /* React.useEffect(()=>{
+  const showShadow=()=>{
+    setIntro(false)
+    setTypes(false)
+   setShadow(true)
+   setReflection(false)
+  }
+  React.useEffect(()=>{
   showIntroduction()
 },[])  
   React.useEffect(()=>{
   showTypes()
-},[])    */
+},[])    
+  React.useEffect(()=>{
+  showShadow()
+},[])    
   return (
     <div className="h-screen w-full bg-learned bg-no-repeat object-fill bg-center fixed">
       <header className="flex justify-between bg-slate-700 opacity-80 p-3 shadow-md">
@@ -43,21 +53,24 @@ const Learn = () => {
         </motion.h4>
       </header>
       <div className="w-full h-full flex justify-center">
-      <div className="w-1/5 bg-zinc-700 opacity-80 p-3 text-white font-script font-bold text-lg shadow-md">
+      <div className="w-1/5 bg-zinc-700 opacity-80 p-3 text-white font-script font-bold text-xl shadow-md">
      <ul >
       <li className="p-4" onClick={showIntroduction}>Introduction To Light</li>
       <hr/>
       <li className="p-4" onClick={showTypes}>Types Of Objects</li>
       <hr/>
-      <li className="p-4">Shadows</li>
+      <li className="p-4" onClick={showShadow}>Shadows</li>
       <hr/>
       <li className="p-4">Reflection</li>
       <hr/>
      </ul>
       </div>
-      <div className="w-4/5 flex justify-center">
+      <div className="w-4/5">
         <div>{ intro && <Introduction/>}</div>
         <div>{ types && <Types/>}</div>
+        <div>
+          {shadow && <Shadows/>}
+        </div>
       </div>
       </div>
     </div>
