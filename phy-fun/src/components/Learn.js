@@ -64,7 +64,7 @@ const Learn = () => {
     showSummary();
   }, []);
   return (
-    <div className="h-screen w-full bg-learned bg-no-repeat object-fill bg-center fixed">
+    <div className="h-screen w-full">{/* bg-learned bg-no-repeat object-fill bg-center fixed */}
       <header className="flex justify-between bg-slate-700 opacity-80 p-3 shadow-md">
         <motion.button
           whileHover={{ scale: 1.1 }}
@@ -126,7 +126,7 @@ const Learn = () => {
             <hr />
           </ul>
         </div>
-        <div className="w-4/5">
+        <div className="w-4/5 bg-rose-300">
           <div>{intro && <Introduction />}</div>
           <div>{types && <Types />}</div>
           <div>{shadow && <Shadows />}</div>

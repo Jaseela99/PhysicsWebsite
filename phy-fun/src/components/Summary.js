@@ -2,7 +2,7 @@ import React from 'react'
 
 const Summary = () => {
   return (
-    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-90">
+    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-80">
     <h1 className="font-lobster text-5xl flex justify-center m-2 w-full opacity-100 p-3">
       Sum It Up..
     </h1>

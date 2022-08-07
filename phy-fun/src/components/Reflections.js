@@ -2,7 +2,7 @@ import React from "react";
 
 const Reflections = () => {
   return (
-    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-90">
+    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-80">
       <h1 className="font-lobster text-5xl flex justify-center m-2 w-3/4 opacity-100 p-3">
         Mirrors and Reflections
       </h1>
