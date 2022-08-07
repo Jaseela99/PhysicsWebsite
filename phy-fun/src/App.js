@@ -13,10 +13,10 @@ function App() {
 <BrowserRouter>
 <Routes>
   <Route exact path="/" element={<LandingPage setUser={setUser}/>}/>
-  <Route exact path="/home" element={<Home/>}/>
-  <Route exact path="/learn" element={<Learn/>}/>
-  <Route exact path="/activities" element={<Activities/>}/>
-  <Route exact path="/quiz" element={<Quiz/>}/>
+  <Route exact path="/home" element={ !user?<LandingPage/>:<Home/>}/>
+  <Route exact path="/learn" element={!user?<LandingPage/>:<Learn/>}/>
+  <Route exact path="/activities" element={!user?<LandingPage/>:<Activities/>}/>
+  <Route exact path="/quiz" element={!user?<LandingPage/>:<Quiz/>}/>
 </Routes>
 </BrowserRouter>      
     </div>

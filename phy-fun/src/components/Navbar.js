@@ -17,7 +17,7 @@ navigate("/"))
 <Link to="/learn"><motion.li whileHover={{scale:1.1}} className="p-2">Learn</motion.li></Link>    
 <Link to="/activities"><motion.li whileHover={{scale:1.1}} className="p-2">Activities</motion.li></Link>
  <Link to="/quiz"><motion.li whileHover={{scale:1.1}} className="p-2">Quiz</motion.li></Link>
- <Link to="/"><motion.li whileHover={{scale:1.1}} className="p-1" ><button className='bg-rose-800 p-1 text-lg rounded-md' onClick={signOut}>SignOut</button></motion.li></Link>
+ <Link to="/"><motion.li whileHover={{scale:1.1}} className="p-1" ><button className='bg-rose-800 p-2 text-lg rounded-md' onClick={signOut}>SignOut</button></motion.li></Link>
    
 </ul>
 

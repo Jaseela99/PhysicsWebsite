@@ -2,7 +2,7 @@ import React from "react";
 
 const Reflections = () => {
   return (
-    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-80">
+    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-90">
       <h1 className="font-lobster text-5xl flex justify-center m-2 w-3/4 opacity-100 p-3">
         Mirrors and Reflections
       </h1>
@@ -14,7 +14,7 @@ const Reflections = () => {
           </h6>
           <p className="p-2">
             When You look on pond we could see reflection of trees and ourselves
-            in it. Let's Try an Activity,shall we?
+            in it. Let's Try an Activity.
           </p>
           <p className="p-2">
             Fix a comb on one side of a large thermoCol sheet and fix a mirror

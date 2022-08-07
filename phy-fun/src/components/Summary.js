@@ -2,7 +2,7 @@ import React from 'react'
 
 const Summary = () => {
   return (
-    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-80">
+    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-90">
     <h1 className="font-lobster text-5xl flex justify-center m-2 w-full opacity-100 p-3">
       Sum It Up..
     </h1>
@@ -28,6 +28,11 @@ const Summary = () => {
         Now Let's do an Activity !
         </p>
       </div>
+      <img
+      src="https://data.whicdn.com/images/330995257/original.gif"
+        alt="power"
+        className=" m-3 h-3/4 w-1/2  rounded-md shadow-md "
+      />
       
     </div>
   </div>

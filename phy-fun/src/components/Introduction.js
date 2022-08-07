@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduction = () => {
   return (
-    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-80">
+    <div className="h-screen w-full p-3 flex flex-col bg-white opacity-90">
       <h1 className="font-lobster text-5xl flex justify-center m-5 w-3/4 opacity-100 p-3">
         How Do We See Things???
       </h1>
@@ -24,7 +24,7 @@ const Introduction = () => {
           </p>
         </div>
         <img
-          src="https://c.tenor.com/ZoVfJwzAFIAAAAAC/no-power-power-outage.gif"
+          src="https://monophy.com/media/X8Vx8K7fv54g9jMWQ5/monophy.gif"
           alt="power"
           className=" ml-12 h-3/4 w-1/4    rounded-md shadow-md opacity-100"
         />

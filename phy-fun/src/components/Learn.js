@@ -50,25 +50,18 @@ const Learn = () => {
   }
   React.useEffect(() => {
     showIntroduction();
-  }, []);
-  React.useEffect(() => {
     showTypes();
-  }, []);
-  React.useEffect(() => {
     showShadow();
-  }, []);
-  React.useEffect(() => {
     showReflection();
-  }, []);
-  React.useEffect(() => {
     showSummary();
   }, []);
+  
   return (
-    <div className="h-screen w-full">{/* bg-learned bg-no-repeat object-fill bg-center fixed */}
+    <div className="h-screen w-full bg-light bg-no-repeat object-fill bg-center fixed">
       <header className="flex justify-between bg-slate-700 opacity-80 p-3 shadow-md">
         <motion.button
           whileHover={{ scale: 1.1 }}
-          className="bg-black text-white rounded-md shadow-md p-2 font-satisfy"
+          className="bg-black text-white rounded-md shadow-md p-3 font-satisfy"
           onClick={() => navigate("/home")}
         >
           {" "}
@@ -126,7 +119,7 @@ const Learn = () => {
             <hr />
           </ul>
         </div>
-        <div className="w-4/5 bg-rose-300">
+        <div className="w-4/5 bg-light bg-no-repeat object-fill bg-center">
           <div>{intro && <Introduction />}</div>
           <div>{types && <Types />}</div>
           <div>{shadow && <Shadows />}</div>

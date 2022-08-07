@@ -14,7 +14,7 @@ const navigate=useNavigate()
     }) 
   } 
   return (
-    <div className=' h-screen w-full align-middle flex justify-center bg-landing bg-fixed bg-center'>
+    <div className=' h-screen w-full align-middle flex justify-center bg-learn bg-fixed bg-center'>
         <div className='flex w-1/2 justify-center align-middle m-auto'>
             <img className="  rounded-full shadow-md bg-center border-r-2 border-b-2 m-auto" src="https://data.whicdn.com/images/147466284/original.gif" alt="hi"/>   
         </div>

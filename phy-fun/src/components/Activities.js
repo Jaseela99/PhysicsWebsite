@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom'
 const Activities = () => {
   const navigate=useNavigate()
   return (
-    <div className="h-screen w-full bg-learned bg-no-repeat object-fill bg-center fixed">
-      <header className="flex justify-between bg-slate-700 opacity-80 p-3 shadow-md">
+    <div className="h-screen w-full bg-activity bg-no-repeat object-fill bg-center fixed">
+      <header className="flex justify-between bg-slate-700 opacity-90 p-3 shadow-md">
         <motion.button
           whileHover={{ scale: 1.1 }}
-          className="bg-black text-white rounded-md shadow-md p-2 font-satisfy"
+          className="bg-black text-white rounded-md shadow-md p-3 font-satisfy"
           onClick={() => navigate("/home")}
         >
           {" "}
@@ -23,10 +23,10 @@ const Activities = () => {
         </motion.h4>
       </header>
       
-      <div className="h-screen w-full p-3 flex flex-col bg-white opacity-90 overflow-y-auto">
-      <h1 className="font-lobster text-5xl m-2 w-full opacity-100 p-3">
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.05, duration:2 }} className="h-screen w-full p-3 flex flex-col bg-white  overflow-y-auto">
+      <motion.h1 className="font-lobster text-5xl m-2 w-full opacity-100 p-3"  whileHover={{ scale: 1.1 }}>
         Make Your Own Pinhole Camera
-      </h1>
+      </motion.h1>
       <div className="flex w-full justify-center opacity-100 p-4 m-1">
 
 <ol className='w-1/2'>
@@ -60,51 +60,53 @@ side with the tracing paper is inside
   </li>
 
 </ol>
-      <div className='w-1/2'>
-<img src="https://haygot.s3.amazonaws.com/questions/635907_95452ae375c8437a8d2785de71bcbcab.png" alt="pinhole"/>
+      <div className='w-1/2 '>
+<img className='rounded-md border-b-2 border-r-2 shadow-md' src="https://haygot.s3.amazonaws.com/questions/635907_95452ae375c8437a8d2785de71bcbcab.png" alt="pinhole"/>
       </div>
       </div>
       <div className='m-2 '>
-      <h1 className="font-lobster text-5xl m-2 w-full opacity-100 p-3">
+      <motion.h1  whileHover={{ scale: 1.1 }} className="font-lobster text-5xl m-2 w-full opacity-100 p-3">
         Lets Use It
-      </h1>
+      </motion.h1>
       <div className="flex w-full justify-center opacity-100 p-4 m-4">
 
 <ol className='w-1/2'>
   <li className="font-domin text-lg pt-2 ">
-  Holding the pinhole camera look
+1.  Holding the pinhole camera look
 through the open face of the smaller
 box. 
   </li>
   <li className="font-domin text-lg pt-2 ">
-  You should use a piece of black
+2.  You should use a piece of black
 cloth to cover your head and the pinhole
 camera. 
   </li>
   <li className="font-domin text-lg pt-2 ">
-  try to look at some distant
+3.  try to look at some distant
 objects like a tree or a building through
 the pinhole camera.
   </li>
   <li className="font-domin text-lg pt-2 ">
-  Make sure that the
+4.  Make sure that the
 objects you wish to look at through your
 pinhole camera are in bright sun shine.
   </li>
   <li className="font-domin text-lg pt-2 ">
-  Move the smaller box forward or
+5.  Move the smaller box forward or
 backward till you get a picture on the
 tracing paper pasted at the other end.
   </li>
+  <li className="font-domin text-lg pt-2 ">
+6. Write down your Observations
+  </li>
 
 </ol>
-<div className=' w-1/2 font-satisfy text-5xl m-auto'>
-  Now write up your Observations!!!
-</div>
+<img src="https://i.stack.imgur.com/JCuSP.gif" className=' w-1/2 font-satisfy text-5xl m-auto rounded-md border-b-2 border-r-2 shadow-md' alt="hi"/>
+
 </div>
       </div>
 
-        </div>
+        </motion.div>
       </div>
   )
 }
