@@ -78,7 +78,7 @@ const next= current+1
         </motion.h4>
       </header>
       
-      <div className="h-screen w-full p-3 flex  bg-white opacity-90 ">
+      <div className="h-screen w-full p-3 flex  bg-sky-200 opacity-90 ">
       <div className='w-1/2 h-3/4 bg-sky-800 rounded-md shadow-md m-10 p-5 text-white font-domin'>
        {showScore?(
         <div>

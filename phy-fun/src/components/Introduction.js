@@ -10,7 +10,7 @@ const Introduction = () => {
         <div className="font-domin w-1/2 text-lg">
           <p className="p-2">
             In a completely dark room, will you be able to see anything? No,
-            right?But Lighting a candle or torch can bring light to the room .
+            right? but lighting a candle or torch can bring light to the room.
             Yes, <span className="text-sky-700 font-semibold">LIGHT </span> 
             helps us see objects.So Where does this light comes from?
           </p>

@@ -23,7 +23,7 @@ const Activities = () => {
         </motion.h4>
       </header>
       
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.05, duration:2 }} className="h-screen w-full p-3 flex flex-col bg-white  overflow-y-auto">
+      <motion.div initial={{opacity:0.7}} animate={{opacity:1}} transition={{delay:0.05, duration:2 }} className="h-screen w-full p-3 flex flex-col bg-sky-200  overflow-y-auto">
       <motion.h1 className="font-lobster text-5xl m-2 w-full opacity-100 p-3"  whileHover={{ scale: 1.1 }}>
         Make Your Own Pinhole Camera
       </motion.h1>
@@ -68,7 +68,7 @@ side with the tracing paper is inside
       <motion.h1  whileHover={{ scale: 1.1 }} className="font-lobster text-5xl m-2 w-full opacity-100 p-3">
         Lets Use It
       </motion.h1>
-      <div className="flex w-full justify-center opacity-100 p-4 m-4">
+      <div className="flex w-full justify-center opacity-100 p-4 mb-12">
 
 <ol className='w-1/2'>
   <li className="font-domin text-lg pt-2 ">
